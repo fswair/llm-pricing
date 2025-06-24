@@ -7,3 +7,4 @@ user-agent
 cache-fastapi
 python-dotenv
 beautifulsoup4
+aiohttp[brotli]
