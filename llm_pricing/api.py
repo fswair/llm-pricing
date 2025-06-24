@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from cache_fastapi.Backends.memory_backend import MemoryBackend
 from cache_fastapi.cacheMiddleware import CacheMiddleware
 
+from .scraper import ClientSession
 from .anthropic import AnthropicScraper
 
 import os
