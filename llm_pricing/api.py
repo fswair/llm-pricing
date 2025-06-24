@@ -19,7 +19,9 @@ cache_ttl = int(os.getenv("FASTAPI_CACHE_TTL", 21600))
 @cached(ttl=86400, key="anthropic_scraper")
 async def get_scraper():
     session = ClientSession()
-    return AnthropicScraper(session=session)
+    scraper = AnthropicScraper(session=session)
+    await scraper.init()
+    return scraper
 
 app = FastAPI()
 
