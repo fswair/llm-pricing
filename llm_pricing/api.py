@@ -1,6 +1,7 @@
 from aiocache import cached
 from typing import Annotated
 from fastapi import FastAPI, Depends, Response
+from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from cache_fastapi.Backends.memory_backend import MemoryBackend
@@ -38,6 +39,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/")
+async def home():
+    return RedirectResponse("/docs")
 
 @app.get("/api/anthropic/pricing")
 async def get_anthropic_pricing(scraper: Annotated[AnthropicScraper, Depends(get_scraper)], response: Response):
