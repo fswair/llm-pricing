@@ -20,7 +20,7 @@ class AnthropicScraper(Scraper):
     _code_exec_cost_pattern = re.compile(r'\$(?P<price>[0-9\.]+)\sper\s(?P<per>.*?)\s(?P<specifier>per container)')
     _web_search_cost_pattern = re.compile(r'\$(?P<price>[0-9\.]+)\s\/\s(?P<per>[0-9\.]+[KMB]?)\s(?P<specifier>searches)')
     
-    def __init__(self, session: ClientSession = ClientSession(), **request_params):
+    def __init__(self, session: ClientSession, **request_params):
         super().__init__('https://www.anthropic.com/pricing#api', session, **request_params)
     
     async def transform_cost(self, tool_cost: str):
