@@ -8,6 +8,12 @@ Note: Please use only for testing!!
 
 [click here](https://llm-costs.tomris.dev)
 
+## Install
+
+``sh
+pip install llm-pricing
+``
+
 ## Anthropic
 
 ```py
