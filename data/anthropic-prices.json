@@ -1,0 +1,102 @@
+{
+  "tools": [
+    {
+      "cost": {
+        "per": "1K",
+        "per_k": true,
+        "price": 10,
+        "specifier": "searches"
+      },
+      "features": [
+        "Give Claude access to the latest information from the web"
+      ],
+      "model_name": "Web search"
+    },
+    {
+      "cost": {
+        "per": "hour",
+        "per_k": false,
+        "price": 0.05,
+        "specifier": "per container"
+      },
+      "features": [
+        "Run Python code in a sandboxed environment for advanced data analysis",
+        "50 free hours of usage daily per organization"
+      ],
+      "model_name": "Code execution"
+    }
+  ],
+  "latest_models": [
+    {
+      "model_name": "Claude Opus 4",
+      "input_price": "$15 / MTok",
+      "output_price": "$75 / MTok",
+      "cache_read_price": "$18.75 / MTok",
+      "cache_write_price": "$1.50 / MTok",
+      "features": [
+        "Most intelligent model for complex tasks",
+        "200K context window",
+        "50% discount with batch processing*"
+      ]
+    },
+    {
+      "model_name": "Claude Sonnet 4",
+      "input_price": "$3 / MTok",
+      "output_price": "$15 / MTok",
+      "cache_read_price": "$3.75 / MTok",
+      "cache_write_price": "$0.30 / MTok",
+      "features": [
+        "Optimal balance of intelligence, cost, and speed",
+        "200K context window",
+        "50% discount with batch processing*"
+      ]
+    },
+    {
+      "model_name": "Claude Haiku 3.5",
+      "input_price": "$0.80 / MTok",
+      "output_price": "$4 / MTok",
+      "cache_read_price": "$1 / MTok",
+      "cache_write_price": "$0.08 / MTok",
+      "features": [
+        "Fastest, most cost-effective model**",
+        "200K context window",
+        "50% discount with batch processing*"
+      ]
+    }
+  ],
+  "legacy_models": [
+    {
+      "model_name": "Claude Opus 3",
+      "input_price": "$15 / MTok",
+      "output_price": "$75 / MTok",
+      "cache_read_price": "$18.75 / MTok",
+      "cache_write_price": "$1.50 / MTok",
+      "features": [
+        "200K context window",
+        "50% discount with batch processing*"
+      ]
+    },
+    {
+      "model_name": "Claude Sonnet 3.7",
+      "input_price": "$3 / MTok",
+      "output_price": "$15 / MTok",
+      "cache_read_price": "$3.75 / MTok",
+      "cache_write_price": "$0.30 / MTok",
+      "features": [
+        "200K context window",
+        "50% discount with batch processing*"
+      ]
+    },
+    {
+      "model_name": "Claude Haiku 3",
+      "input_price": "$0.25 / MTok",
+      "output_price": "$1.25 / MTok",
+      "cache_read_price": "$0.30 / MTok",
+      "cache_write_price": "$0.03 / MTok",
+      "features": [
+        "200K context window",
+        "50% discount with batch processing*"
+      ]
+    }
+  ]
+}
