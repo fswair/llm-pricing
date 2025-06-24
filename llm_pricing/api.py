@@ -46,3 +46,8 @@ async def get_anthropic_pricing(scraper: Annotated[AnthropicScraper, Depends(get
     """
     response.headers["Cache-Control"] = f"max-age={cache_ttl}"
     return await scraper.pricing_overall()
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    scraper = await get_scraper()
+    await scraper.session.close()
