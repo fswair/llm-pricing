@@ -2,6 +2,12 @@
 
 This project provides LLM prices for developers as an API.
 
+## Live API
+
+Note: Please use only for testing!!
+
+[click here](https://llm-costs.tomris.dev)
+
 ## Anthropic
 
 ```py
