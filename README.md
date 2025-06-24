@@ -10,9 +10,9 @@ Note: Please use only for testing!!
 
 ## Install
 
-``sh
+```sh
 pip install llm-pricing
-``
+```
 
 ## Anthropic
 
