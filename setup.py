@@ -6,12 +6,24 @@ with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 def read_requirements():
-    with open(os.path.join(this_directory, 'requirements.txt'), encoding='utf-8') as f:
-        return [line.strip() for line in f if line.strip() and not line.startswith('#')]
+    return [
+    "brotli",
+    "uvicorn",
+    "fastapi",
+    "aiohttp",
+    "aiocache",
+    "pydantic",
+    "user-agent",
+    "cache-fastapi",
+    "python-dotenv",
+    "beautifulsoup4",
+    "aiohttp[brotli]"
+    ]
+
 
 setuptools.setup(
     name='llm-pricing',
-    version='0.1.0',
+    version='0.1.3',
     description='A library for scraping and managing LLM pricing information',
     long_description=long_description,
     long_description_content_type='text/markdown',
